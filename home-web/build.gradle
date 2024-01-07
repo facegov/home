@@ -1,0 +1,17 @@
+plugins {
+    id "com.github.node-gradle.node" version "7.0.1"
+}
+
+group = 'com.facegov'
+version = '0.0.1-SNAPSHOT'
+
+node {
+    download = true
+    version = "18.17.1"
+}
+
+tasks.register('buildHomeWebApp', NodeTask) {
+    dependsOn npmInstall
+    script = file('node_modules/react-scripts/bin/react-scripts.js')
+    args = ['build']
+}
