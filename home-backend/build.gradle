@@ -40,19 +40,8 @@ tasks.named('test') {
 
 tasks.register('buildHomeApp') {
     dependsOn ':home-web:buildHomeWebApp'
-    dependsOn 'copyReactJsToSpringBoot'
-}
-
-tasks.register('copyReactJsToSpringBoot', Copy) {
-    from "${rootDir}/home-web/build/"
-    into "${rootDir}/home-backend/build/resources/main/static"
-//    into "${rootDir}/home-backend/src/main/resources/static/"
 }
 
 tasks.named('compileJava') {
     dependsOn 'buildHomeApp'
-}
-
-tasks.named('processResources') {
-    dependsOn ':home-backend:copyReactJsToSpringBoot'
 }
