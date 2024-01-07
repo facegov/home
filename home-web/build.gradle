@@ -12,6 +12,12 @@ node {
 
 tasks.register('buildHomeWebApp', NodeTask) {
     dependsOn npmInstall
+    dependsOn copyHomeWebApp
     script = file('node_modules/react-scripts/bin/react-scripts.js')
     args = ['build']
+}
+
+tasks.register('copyHomeWebApp', Copy) {
+    from "${rootDir}/home-web/build"
+    into "${rootDir}/home-backend/build/resources/main/static"
 }
