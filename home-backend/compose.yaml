@@ -1,0 +1,8 @@
+services:
+  app:
+    image: centos:8.3.2011
+    ports:
+      - 8080:8080
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    command: /bin/bash -c "yum install -y java-17-openjdk-devel && java -version"

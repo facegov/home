@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home-backend/facegov.home-backend.main.iml" filepath="$PROJECT_DIR$/.idea/modules/home-backend/facegov.home-backend.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-and-web-as-multiproject.iml" filepath="$PROJECT_DIR$/.idea/modules/service-and-web-as-multiproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service/service-and-web-as-multiproject.service.iml" filepath="$PROJECT_DIR$/.idea/modules/service/service-and-web-as-multiproject.service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service/service-and-web-as-multiproject.service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/service/service-and-web-as-multiproject.service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service/service-and-web-as-multiproject.service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/service/service-and-web-as-multiproject.service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/service-and-web-as-multiproject.web.iml" filepath="$PROJECT_DIR$/.idea/modules/web/service-and-web-as-multiproject.web.iml" />
+    </modules>
+  </component>
+</project>
